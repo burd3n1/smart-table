@@ -1,1 +1,1 @@
-# sp6-2_smart-table_starter
+https://github.com/burd3n1/smart-table.git
