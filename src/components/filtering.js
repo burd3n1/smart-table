@@ -19,7 +19,7 @@ export function initFiltering(elements) {
         // @todo: #4.2 — обработать очистку поля
         if (action && action.name === 'clear') {
             const button = action.target; // Кнопка, которая была нажата
-            const field = button.dataset.field; // Поле для очистки
+            const field = action.dataset; // Поле для очистки
 
             // Находим родительский элемент кнопки
             const parentElement = button.parentElement;

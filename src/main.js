@@ -84,7 +84,7 @@ const applySorting = initSorting([        // Нам нужно передать 
 
 import { initSearching } from "./components/searching.js";
 
-const applySearching = initSearching(sampleTable.search.elements, {
+const applySearching = initSearching("search", {
     searchBySeller: indexes.sellers
 });
 
