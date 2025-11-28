@@ -18,11 +18,11 @@ export function initFiltering(elements) {
     const applyFiltering = (query, state, action) => {
         // @todo: #4.2 — обработать очистку поля
         if (action && action.name === 'clear') {
-            const button = action.target; // Кнопка, которая была нажата
+
             const field = action.dataset; // Поле для очисткии
 
             // Находим родительский элемент кнопки
-            const parentElement = button.parentElement;
+            const parentElement = action.parentElement;
 
             // Находим поле ввода внутри родительского элемента
             const input = parentElement.querySelector('input');
